@@ -1,0 +1,134 @@
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    width: 1040px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.wrapper nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper nav a {
+    font-size: 1em;
+    padding: 40px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper nav a:hover {
+    color: gray;
+}
+
+.wrapper main {
+    width: 1040px;
+    padding: 15px 15px;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.wrapper main .about {
+    width: 100%;
+    display: flex;
+}
+
+.wrapper main .about .description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wrapper main .about .description h1 {
+    font-size: 55px;
+    margin: 10px 0;    
+}
+
+.wrapper main .about .description p {
+    font-size: 1.2em;
+    margin: 10px 0;    
+}
+
+.wrapper main .about .description .social-media {
+    width: 100%;
+    margin-top: auto;
+}
+.wrapper main .about .description .social-media p {
+    font-size: 1em;
+}
+.wrapper main .about .description .social-media a {
+    text-decoration: none;
+    font-size: 1.4em;
+    color: black;
+    margin: 0 5px;
+}
+
+.wrapper main .about .description .social-media a:hover {
+    color: gray;
+}
+
+.wrapper main .about .profile {
+    width: 50%;
+}
+.wrapper main .about .profile img {
+    width: 100%;
+}
+
+@media screen and (max-width: 560px) {
+    .wrapper {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .wrapper nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .wrapper main {
+        width: 90%;
+        padding: 15px 15px;
+        margin: 0 6px;
+        border: 1px solid black;
+        box-sizing: content-box;
+    }
+    
+    .wrapper main .about {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .wrapper main .about .description {
+        width: 100%;
+        order: 1;
+    }
+
+    .wrapper main .about .description h1 {
+        font-size: 2.8em;
+        margin: 10px 0;    
+    }
+    
+    .wrapper main .about .description p {
+        font-size: 1.2em;
+        margin: 10px 0;    
+    }
+    
+    .wrapper main .about .profile {
+        width: 100%;
+    }
+    .wrapper main .about .profile img {
+        width: 100%;
+    }
+}
